@@ -1,3 +1,19 @@
 {
-  "Name": "test"
+  "pre-hooks": [
+    {
+        "type": "tfinstall",
+        "value": "0.11.7"
+    },
+    {
+        "type": "shell",
+        "value": "echo"
+    }
+
+  ],
+  "post-hooks": [
+    {
+      "type": "checkECS",
+      "value": "test-service"
+    }
+  ]
 }

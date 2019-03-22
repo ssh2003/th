@@ -7,6 +7,11 @@ import (
 
   )
 //var flagvar int
+
+type Config struct {
+  
+}
+
 var runCmd = &cobra.Command{
   	Use:   "run",
   	Short: "run terraform apply with all pre and post actions",
