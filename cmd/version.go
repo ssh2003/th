@@ -1,11 +1,12 @@
-package "version"
+package version
 
 import (
     "fmt"
     "github.com/spf13/cobra"
   )
 
-  var versionCmd = &cobra.Command{
+const Version = "1.0.0-rc2"
+var versionCmd = &cobra.Command{
   	Use:   "version",
   	Short: "ver",
   	Long:  `This subcommand output current version`,
