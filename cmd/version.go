@@ -1,17 +1,17 @@
-package version
+package cmd
 
 import (
     "fmt"
     "github.com/spf13/cobra"
   )
 
-const Version = "1.0.0-rc2"
+const Version = "0.0.1"
 var versionCmd = &cobra.Command{
   	Use:   "version",
-  	Short: "ver",
+  	Short: "Output verion of th",
   	Long:  `This subcommand output current version`,
   	Run: func(cmd *cobra.Command, args []string) {
-  		fmt.Println("output version")
+  		fmt.Printf("th version %s\n", Version)
   	},
   }
 

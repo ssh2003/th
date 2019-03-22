@@ -11,10 +11,10 @@ var cfgFile string
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
-	Use:   "cobra-example",
-	Short: "An example of cobra",
-	Long: `This application shows how to create modern CLI
-applications in go using Cobra CLI library`,
+	Use:   "th",
+	Short: "Small terraform wrapper",
+	Long: `This wrapper check existence of terraform, check his version, run pre-apply hook and post-apply hooks,
+	all existing hooks you can found in documentation`,
 }
 
 func Execute() {
@@ -24,6 +24,6 @@ func Execute() {
 	}
 }
 
-func init() {
-	fmt.Println("Init")
-}
+// func init() {
+// 	fmt.Println("Init")
+// }

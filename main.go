@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ssh2003/th/cmd"
+import "th/cmd"
 
 func main() {
 	cmd.Execute()
